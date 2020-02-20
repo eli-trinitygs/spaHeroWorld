@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class HeroesService {
 
-  constructor() { }
+  constructor() {
+    console.log('Servicio heroico listo para usarse');
+   }
 }

@@ -62,4 +62,9 @@ export class HeroesService {
   constructor() {
     console.log('Servicio heroico listo para usarse');
    }
+
+   //crear metodo para acceder a la data
+   getHeroes() {
+     return this.heroes;
+   }
 }

@@ -3,6 +3,19 @@
 
 <div class="card-columns">
     <div *ngFor="let heroe of heroes" class="card">
+        <img [src]="heroe.img" [alt]="heroe.nombre" class="card-img-top">
+    <!-- <img src="{{ heroe.img }}"> -->
+        <div class="card-body">
+          <h5 class="card-title">{{heroe.nombre}}</h5>
+          <p class="card-text">{{heroe.bio}}</p>
+        </div>
+        <button type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+        <div class="card-footer">
+          <small class="text-muted">{{heroe.aparicion}}</small>
+        </div>
+      </div>
+
+      <!-- <div *ngFor="let heroe of heroes" class="card">
         <img src="../../../assets/img/aquaman.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -12,5 +25,5 @@
         <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
         </div>
-      </div>
+      </div> -->
 </div>

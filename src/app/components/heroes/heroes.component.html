@@ -10,8 +10,9 @@
           <h5 class="card-title">{{heroe.nombre}}</h5>
           <p class="card-text">{{heroe.bio}}</p>
         </div>
-        <!-- <button type="button" class="btn btn-outline-primary btn-block">Ver más...</button> -->
-        <a [routerLink]="['/heroe', i]"  class="btn btn-outline-primary">Ver más ...</a>
+        <button (click)="verHeroe(i)"
+        type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+        <!-- <a [routerLink]="['/heroe', i]"  class="btn btn-outline-primary">Ver más ...</a> -->
         
         <div class="card-footer">
           <small class="text-muted">{{heroe.aparicion}}</small>

@@ -15,7 +15,11 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit() {
 this.heroes = this._heroesService.getHeroes();
-console.log(this.heroes);
+// console.log(this.heroes);
+  }
+  //funcion que se  detonara con el evento CLICK
+  verHeroe( idx:number ) {
+    console.log(idx);
   }
 
 }

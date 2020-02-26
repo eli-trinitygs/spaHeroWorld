@@ -68,3 +68,12 @@ export class HeroesService {
      return this.heroes;
    }
 }
+
+//creando interface
+interface Heroe {
+  nombre: string;
+  bio: string;
+  img: string;
+  aparicion: string;
+  casa: string;
+}

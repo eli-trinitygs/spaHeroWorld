@@ -10,9 +10,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'heroes', component: HeroesComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' },
-// este path debe recibir un parametro, que sera el id del hero que vamos a mostrar
-  { path: 'heroe/:id', component: HeroeComponent}
+  // este path debe recibir un parametro, que sera el id del hero que vamos a mostrar
+  { path: 'heroe/:id', component: HeroeComponent},
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 @NgModule({

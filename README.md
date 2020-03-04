@@ -1,5 +1,22 @@
 # ███▓▒░░SPA Hero World░░▒▓███ 
 
+Esta es una aplicación SPA (single page application) desarrollada con Angular 8.
+
+Permite visualizar información de algunos heroes de cómics, y también permite realizar búsqueda.
+
+
+Desarrollo:
+- Creación de proyectos usando Angular CLI
+
+- Uso de bootstrap
+
+- Creación de rutas ( uso de RouterLink, routerlinkactive para moverse de página, colocar clases a los elementos activos).
+
+- Uso del modulo Router; obtener parámetros vía URL.
+
+- Configuración de servicio para manejar la data.
+
+- Uso del buscador del navbar para realizar una consulta en nuestra data.
 
 
 --------------------------------------------------------------------------------

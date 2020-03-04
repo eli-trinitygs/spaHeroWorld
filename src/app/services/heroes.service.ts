@@ -64,8 +64,11 @@ export class HeroesService {
    }
 
    //crear metodo para acceder a la data
-   getHeroes() {
+   getHeroes():Heroe[] {
      return this.heroes;
+   }
+   getHeroe(idx: string) {
+     return this.heroes[idx];
    }
 }
 

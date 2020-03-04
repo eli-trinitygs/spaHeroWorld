@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -19,14 +19,20 @@ export class HeroeCardComponent implements OnInit {
 
 @Input() index: number;
 
-  constructor(private router:Router) { }
+//nombre del evento que quiero que el padre escuche
+@Output() heroeSeleccionado: EventEmitter<number>;
+
+  constructor(private router:Router) { 
+    //inicializar / dispara un evento personalizado
+    this.heroeSeleccionado = new EventEmitter();
+  }
 
   ngOnInit() {
   }
 //FUNCTION
 verHeroe() {
-  console.log(this.index);
-
-  this.router.navigate(['/heroe', this.index]);
+  // console.log(this.index);
+  // this.router.navigate(['/heroe', this.index]);
+  this.heroeSeleccionado.emit(this.index);
 }
 }

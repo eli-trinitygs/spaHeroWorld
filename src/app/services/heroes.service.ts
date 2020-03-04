@@ -70,6 +70,23 @@ export class HeroesService {
    getHeroe(idx: string) {
      return this.heroes[idx];
    }
+
+   //FUNCION BUSCAR HEROES
+   buscarHeroes( termino:string) {
+     //crear nuevo arreglo
+let heroesArr:Heroe[] = [];
+//pasar termino recibido a minuscula
+termino = termino.toLowerCase();
+//barrido del arreglo de heroes para busca cual es el que coincide
+for(let heroe of this.heroes){
+  //comparar en minuscula con el termino 
+  let nombre = heroe.nombre.toLowerCase();
+    if(nombre.indexOf(termino) >= 0){
+      heroesArr.push(heroe)
+    }
+}
+  return heroesArr;
+   }
 }
 
 //creando interface

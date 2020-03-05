@@ -1,0 +1,36 @@
+.bkg-img {
+    background: url('../../../../assets/img/bkg-heroes.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem 0;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    text-align: center;
+    text-shadow:5px 2px rgba(0, 0, 0, 0.877);
+    /* margin: 0 7rem 7rem 7rem;
+    padding: 2rem 5rem;
+    height: 26vh;
+    
+    
+    
+    border: 5px solid rgba(255, 255, 255, 0.644);
+    border-style: double; */
+}
+
+/*@media screen and (max-width: 500px){
+    .bkg-img {
+        padding: 0;
+        width: 100vw;
+        background-position: center;
+    }
+    .jumbotron {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem; 
+    }
+} */

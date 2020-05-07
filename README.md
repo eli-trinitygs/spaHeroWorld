@@ -1,10 +1,14 @@
 # ███▓▒░░SPA Hero World░░▒▓███ 
 
-![Heroe World](https://github.com/elizabethtrinitygs/spaHeroWorld/blob/master/src/assets/img/spa-img.jpg)
+![Heroe World](https://github.com/elizabethtrinitygs/spaHeroWorld/blob/master/src/assets/img/view-spa-1.jpg)
 
 Esta es una aplicación SPA (single page application) desarrollada con Angular 8.
 
-Permite visualizar información de algunos heroes de cómics, y también permite realizar búsqueda.
+### Permite visualizar información de algunos heroes de cómics.
+![Heroe World](https://github.com/elizabethtrinitygs/spaHeroWorld/blob/master/src/assets/img/view-spa-2.jpg)
+
+### Y también permite realizar búsqueda y visualizar la información.
+![Heroe World](https://github.com/elizabethtrinitygs/spaHeroWorld/blob/master/src/assets/img/view-spa-3.jpg)
 
 
 Desarrollo:

@@ -1,18 +1,18 @@
-<h1>HÉROES <small>Marvel & DC</small></h1>
-<hr>
-
-<div class="card-columns">
-  <!-- *ngFor="let heroe of heroes; let i = index"  -->
-
-  <!-- Se elimina el codogi de la tarjeta
-  para moverlo al componente "heroe-card"-->
-
-  <!--llamando el componente heroe-card 
-  y le agregamos *ngFor para mostrar los elementos-->
-
-  <!--DESDE ESTE COMPONENTE(padre) DEBEMOS MANDAR INFORMACION AL hijo
-  -->
-
-  <app-heroe-card (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [index]="i"
-  *ngFor="let heroe of heroes; let i = index"></app-heroe-card>
-</div>
+<h1 style="margin-top: 5rem; text-align: center;">HÉROES <br><small>Marvel & DC</small></h1>
+  <hr>
+  
+  <div class="card-columns">
+    <!-- *ngFor="let heroe of heroes; let i = index"  -->
+  
+    <!-- Se elimina el codogi de la tarjeta
+    para moverlo al componente "heroe-card"-->
+  
+    <!--llamando el componente heroe-card 
+    y le agregamos *ngFor para mostrar los elementos-->
+  
+    <!--DESDE ESTE COMPONENTE(padre) DEBEMOS MANDAR INFORMACION AL hijo
+    -->
+  
+    <app-heroe-card (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [index]="i"
+    *ngFor="let heroe of heroes; let i = index"></app-heroe-card>
+  </div>
